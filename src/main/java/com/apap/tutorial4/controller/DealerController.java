@@ -44,8 +44,6 @@ public class DealerController {
 			
 			DealerModel dealer = dealerService.getDealerDetailById(id).get();
 			model.addAttribute("dealer", dealer);
-			/*model.addAttribute("car", dealer.getListCar());*/
-			System.out.println(dealer.getListCar().size());
 			List<CarModel> car = dealer.getListCar();
 			model.addAttribute("car", car);
 			return "viewDealer";
