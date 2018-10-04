@@ -2,13 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<title>Add Dealer</title>
+	<title>Update Dealer</title>
 </head>
 
 <body>
 	<h2> Hello!</h2>
 	
-	<h3>Tambah Dealer</h3>
+	<h3>Update Dealer</h3>
 	<form th:action="@{'/dealer/update/'+ ${dealer.id}}" th:object="${dealer}"method="POST">
 		Nama:<br>
 		<input type="text" name="nama" />
